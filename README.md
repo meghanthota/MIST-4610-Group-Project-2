@@ -1,15 +1,12 @@
 # MIST-4610-Group-Project-2
 
-# Problem Description
-The goal of this project is...
-
 # Team Members:
 Group Leader:Meghan Thota
 SQL Writer:Ori Cohen-Aka 
 Data Wrangler/Database Designer:Luke Van Putten
 Conceptual Modeler:Rahul Pullolickal
 
-# Case Summary 
+# Project Goal
 Northline Outfitters is a small but growing online retailer selling student friendly lifestyle and tech accessories including hoodies, water bottles, desk lamps, phone cases, keyboards, mouse pads, and backpacks directly to consumers in the United States and Canada. The company sources its merchandise from external vendors and currently manages most of its operational records in Excel rather than a structured database.
 The project begins with two raw spreadsheet exports that reflect the informal, day-to-day record keeping of a small business. These files contain a number of data quality issues common to small enterprises operating without a formal database such as inconsistent formatting, unstructured text fields, mixed unit systems, and duplicate or variant records. The goal of this project is to assess those issues, clean and normalize the data, design a relational database that can be analyzed using SQL to support business decision-making.
 
