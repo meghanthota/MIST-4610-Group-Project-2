@@ -4,14 +4,16 @@
 The goal of this project is...
 
 # Team Members:
-Meghan Thota: Group Leader
-Ori Cohen-Aka : SQL Writer
-Luke Van Putten: Data Wrangler/Database Designer
-Rahul Pullolickal: Conceptual Modeler
+Group Leader:Meghan Thota
+SQL Writer:Ori Cohen-Aka 
+Data Wrangler/Database Designer:Luke Van Putten
+Conceptual Modeler:Rahul Pullolickal
+
+# Case Summary 
+Northline Outfitters is a small but growing online retailer selling student friendly lifestyle and tech accessories including hoodies, water bottles, desk lamps, phone cases, keyboards, mouse pads, and backpacks directly to consumers in the United States and Canada. The company sources its merchandise from external vendors and currently manages most of its operational records in Excel rather than a structured database.
+The project begins with two raw spreadsheet exports that reflect the informal, day-to-day record keeping of a small business. These files contain a number of data quality issues common to small enterprises operating without a formal database such as inconsistent formatting, unstructured text fields, mixed unit systems, and duplicate or variant records. The goal of this project is to assess those issues, clean and normalize the data, design a relational database that can be analyzed using SQL to support business decision-making.
 
 # Data Model
-
-# Data Dictionary
 
 # Data Quality Assesment
 The source dataset reveals contains significant data quality issues that may negatively impact analysis, reporting accuracy, and overall data reliability. The primary issues are listed below:
@@ -60,6 +62,11 @@ Impact: Limits the ability to perform calculations and statistical analysis.
 Fields such as notes contain unstructured, inconsistent text entries.
 
 Impact: These fields are difficult to analyze systematically and may introduce ambiguity.
+
+7.The dataset contains product rows that are duplicated or represent variants, but are not clearly distinguished. This includes inconsistencies such as SKU case sensitivity (ex:, uppercase vs lowercase) and minor differences in product names.
+
+Impact:
+These inconsistencies can lead to duplicate records being treated as separate products and double counting during analysis, resulting in inaccurate aggregations and innacurate analysis (ex: overstated sales totals).
 
 Conclusion
 
