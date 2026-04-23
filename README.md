@@ -20,8 +20,11 @@ The source dataset reveals contains significant data quality issues that may neg
 Several fields use inconsistent formats, making the data difficult to process and analyze. Examples include: 
 
 Dates appear in multiple formats (numeric, abbreviated text, full text).
+
 Currency values are formatted differently between the unit_price column and line_total column. One uses ("USD 14.99") format while the other uses symbols to format (ex: "$14.99"). They are measuring the same type of value but are recorded differently.
+
 Discounts and tax values are inconsistently represented (ex: “10%”, “5”, "student 10%", “promo5”).
+
 Payment methods vary in capitalization (ex: “VISA” vs “visa”).
 
 Impact: These inconsistencies prevent accurate calculations, sorting, and time based analysis without prior data cleaning.
@@ -43,7 +46,9 @@ Impact: This compromises data integrity and makes it difficult to accurately joi
 Some fields contain multiple pieces of information combined into a single column:
 
 Customer information includes names, status, and location in one field.
+
 Shipping information is inconsistently recorded (e.g., “Same as billing” vs full address).
+
 Size or weight column includes information on both size and weight in one field but record different values in different units. (ex:, inches vs centimeters, grams vs pounds).
 
 Impact: This makes querying and analysis more difficult and prevents direct comparison/aggregation without unit standardization
