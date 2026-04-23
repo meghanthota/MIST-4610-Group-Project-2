@@ -76,6 +76,10 @@ These inconsistencies can lead to duplicate records being treated as separate pr
 
 Overall, the dataset contains multiple data quality issues, including inconsistencies in formatting, missing values, duplicate records, and lack of standardization. These issues must be addressed through data cleaning processes before the dataset can be used for reliable analysis or decision-making.
 
+**Clean UP**
+For the clean up we used Excel's built-in 'Find and Replace' to change a lot of things along with 'numerous.ai' a add-in for Excel. When it comes to columns like customer_info we had to separate it into 3 different columns: customer_name, loyalty_status, one part of student_status. The difficulty with student was that there were multiple columns that had incomplete info about whether a row was a student. So I had to concatenate the tables, prioritizing yes for student. Completed by making student_final column. Working straight from Excel worked well because even with the ai, and find-replace, there were little issues that occurred. Being able to scroll through the data and edit individual cells proved to be very useful.
+
+
 ---
 
 #Database information:
