@@ -15,7 +15,7 @@ The project begins with two raw spreadsheet exports that reflect the informal, d
 # Data Quality Assesment
 The source dataset reveals contains significant data quality issues that may negatively impact analysis, reporting accuracy, and overall data reliability. The primary issues are listed below:
 
-1. Inconsistent Data Formats
+**1. Inconsistent Data Formats**
 
 Several fields use inconsistent formats, making the data difficult to process and analyze. Examples include: 
 
@@ -29,19 +29,19 @@ Payment methods vary in capitalization (ex: “VISA” vs “visa”).
 
 Impact: These inconsistencies prevent accurate calculations, sorting, and time based analysis without prior data cleaning.
 
-2. Missing Values
+**2. Missing Values**
 
 Several attributes contain missing or null values, including fields such as tax, line totals, size/weight, and return indicators.
 
 Impact: Missing data leaves an incomplete dataset, introduces potential bias, and may lead to errors in analysis or reporting.
 
-3. Inconsistent Key Fields
+**3. Inconsistent Key Fields**
 
 Key identifiers like SKUs are not consistently formatted, and relationships between alternative SKUs or parent SKUs are unclear.
 
 Impact: This compromises data integrity and makes it difficult to accurately join or relate datasets.
 
-4. Unstructured and Combined Fields
+**4. Unstructured and Combined Fields**
 
 Some fields contain multiple pieces of information combined into a single column:
 
@@ -53,24 +53,26 @@ Size or weight column includes information on both size and weight in one field 
 
 Impact: This makes querying and analysis more difficult and prevents direct comparison/aggregation without unit standardization
 
-5. Data Type Issues
+**5. Data Type Issues**
 
 Some numeric fields are stored as text in Excel, including prices and percentages. Some columns also have mzied datatypes.
 
 Impact: Limits the ability to perform calculations and statistical analysis.
 
-6. Uncontrolled Free-Text Fields
+**6. Uncontrolled Free-Text Fields**
 
 Fields such as notes contain unstructured, inconsistent text entries.
 
 Impact: These fields are difficult to analyze systematically and may introduce ambiguity.
 
-7.The dataset contains product rows that are duplicated or represent variants, but are not clearly distinguished. This includes inconsistencies such as SKU case sensitivity (ex:, uppercase vs lowercase) and minor differences in product names.
+**7. Duplicate Values**
+
+The dataset contains product rows that are duplicated or represent variants, but are not clearly distinguished. This includes inconsistencies such as SKU case sensitivity (ex:, uppercase vs lowercase) and minor differences in product names.
 
 Impact:
 These inconsistencies can lead to duplicate records being treated as separate products and double counting during analysis, resulting in inaccurate aggregations and innacurate analysis (ex: overstated sales totals).
 
-Conclusion
+**Conclusion**
 
 Overall, the dataset contains multiple data quality issues, including inconsistencies in formatting, missing values, duplicate records, and lack of standardization. These issues must be addressed through data cleaning processes before the dataset can be used for reliable analysis or decision-making.
 
