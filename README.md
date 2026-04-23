@@ -6,11 +6,11 @@ SQL Writer:Ori Cohen-Aka
 Data Wrangler/Database Designer:Luke Van Putten
 Conceptual Modeler:Rahul Pullolickal
 
-# Project Goal
+# Case Summary
 Northline Outfitters is a small but growing online retailer selling student friendly lifestyle and tech accessories including hoodies, water bottles, desk lamps, phone cases, keyboards, mouse pads, and backpacks directly to consumers in the United States and Canada. The company sources its merchandise from external vendors and currently manages most of its operational records in Excel rather than a structured database.
 The project begins with two raw spreadsheet exports that reflect the informal, day-to-day record keeping of a small business. These files contain a number of data quality issues common to small enterprises operating without a formal database such as inconsistent formatting, unstructured text fields, mixed unit systems, and duplicate or variant records. The goal of this project is to assess those issues, clean and normalize the data, design a relational database that can be analyzed using SQL to support business decision-making.
 
-# Data Model
+# Conceptual Model
 
 # Data Quality Assesment
 The source dataset reveals contains significant data quality issues that may negatively impact analysis, reporting accuracy, and overall data reliability. The primary issues are listed below:
@@ -76,7 +76,7 @@ These inconsistencies can lead to duplicate records being treated as separate pr
 
 Overall, the dataset contains multiple data quality issues, including inconsistencies in formatting, missing values, duplicate records, and lack of standardization. These issues must be addressed through data cleaning processes before the dataset can be used for reliable analysis or decision-making.
 
-# Data Cleaning
+# Data Cleaning Process
 The dataset was cleaned and standardized using a combination of Excel tools and an AI add-in. The process is outlined below in clear steps:
 
 **Step 1: Initial Data Cleanup**
@@ -106,10 +106,12 @@ Student status information was incomplete and spread across multiple columns. To
 Although automation tools were helpful, some inconsistencies required manual inspection. Working directly in Excel allowed us to scroll through the dataset and identify obvious issues in the data and manually change errors that were missed by automation. Some cells had to be edited individually.
 This step ensured the final dataset was accurate and ready for analysis.
 
+# Queries
+
 
 ---
 
-#Database information:
+# Database information:
 Name of the database: mb_B6
 
 Additional information: Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL GP_Q1();
