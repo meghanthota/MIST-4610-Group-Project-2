@@ -76,8 +76,35 @@ These inconsistencies can lead to duplicate records being treated as separate pr
 
 Overall, the dataset contains multiple data quality issues, including inconsistencies in formatting, missing values, duplicate records, and lack of standardization. These issues must be addressed through data cleaning processes before the dataset can be used for reliable analysis or decision-making.
 
-**Clean UP**
-For the clean up we used Excel's built-in 'Find and Replace' to change a lot of things along with 'numerous.ai' a add-in for Excel. When it comes to columns like customer_info we had to separate it into 3 different columns: customer_name, loyalty_status, one part of student_status. The difficulty with student was that there were multiple columns that had incomplete info about whether a row was a student. So I had to concatenate the tables, prioritizing yes for student. Completed by making student_final column. Working straight from Excel worked well because even with the ai, and find-replace, there were little issues that occurred. Being able to scroll through the data and edit individual cells proved to be very useful.
+# Data Cleaning
+The dataset was cleaned and standardized using a combination of Excel tools and an AI add-in. The process is outlined below in clear steps:
+
+**Step 1: Initial Data Cleanup**
+
+We used Excel’s built-in Find and Replace function to correct inconsistencies in the data, standardize values, and remove obvious errors across the dataset. This was useful for quick bulk updates to improve overall data consistency for differences in capitalization and formatting.
+
+**Step 2: AI-Assisted Cleaning**
+
+Instead of using manual cleaning, we used the Numerous.ai Excel add-in to help identify patterns, automate repetitive fixes, and help with overall with data standardization. This improved efficiency during the cleaning process, while maintaining accuracy of the data.
+
+**Step 3: Column Separation**
+
+The customer_info column contained multiple pieces of information in a single field. We split this into three separate columns:
+
+customer_name
+loyalty_status
+A partial student_status field
+
+This step improved data structure and made the dataset easier to analyze.
+
+**Step 4: Resolving Student Status Inconsistencies**
+
+Student status information was incomplete and spread across multiple columns. To address this we combined relevant columns using concatenation and prioritized “Yes” values when conflicting information appeared. Therefore the consolidated column called student_final was created. This ensured a single, reliable indicating column of student status for each row.
+
+**Step 5: Manual Review and Validation**
+
+Although automation tools were helpful, some inconsistencies required manual inspection. Working directly in Excel allowed us to scroll through the dataset and identify obvious issues in the data and manually change errors that were missed by automation. Some cells had to be edited individually.
+This step ensured the final dataset was accurate and ready for analysis.
 
 
 ---
