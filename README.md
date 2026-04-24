@@ -128,32 +128,38 @@ This step ensured the final dataset was accurate and ready for analysis.
 # Queries
 
 1. Revenue Performance by Product Category
+
 This query calculates the total gross revenue for each product category to identify the most profitable lines of business.
 <img width="454" height="448" alt="image" src="https://github.com/user-attachments/assets/f2f0a9e6-60b8-4fc7-911b-70d63da930e1" />
 Business Insight: Helps Northline Outfitters decide which categories (e.g., "Tech" vs. "Apparel") deserve more marketing budget.
 
 2. Employee Sales Ranking With Manager Tracking
+
 This query ranks employees by their total sales volume and includes their manager’s ID to show the reporting hierarchy.
 <img width="445" height="448" alt="image" src="https://github.com/user-attachments/assets/e6d0fe08-3431-41df-a638-d21282ffa48e" />
 Business Insight: Identifies top performers for potential bonuses and reveals which management teams are driving the most revenue.
 
 3. Return Rate Analysis
+
 This query calculates the percentage of items returned to identify potential quality control issues or customer dissatisfaction.
 <img width="503" height="465" alt="image" src="https://github.com/user-attachments/assets/7d36ff7c-0c0d-4f21-90fe-621090684e87" />
 Business Insight: Highlights specific products that may have "dirty" manufacturing data or poor customer fit.
 
 # Additonal Queries
 4. Average Order Value (AOV) by Loyalty Status
+
 This query determines if your loyalty members are actually spending more per order than regular guests.
 <img width="503" height="465" alt="image" src="https://github.com/user-attachments/assets/ac0a0caf-3d0f-41f0-9e45-34fdbcee4ec1" />
 Business Insight: Proves the ROI of the loyalty program; if "Members" have a higher AOV, the program is a success.
 
 5. Inventory "Low-Stock" Alert
+
 A critical operational query that identifies which products are currently below their reorder level and provides the vendor contact info.
 <img width="503" height="465" alt="image" src="https://github.com/user-attachments/assets/c9782868-f713-4d26-b17e-41f85c1c6b42" />
 Business Insight: Automates the supply chain by telling the manager exactly who to call when stock is low.
 
 6. Geographic Revenue Heatmap
+
 This query identifies which cities and states are generating the most revenue for targeted regional promotions.
 <img width="503" height="465" alt="image" src="https://github.com/user-attachments/assets/0581ea7f-1767-44e5-b135-955486894753" />
 Business Insight: Pinpoints the "hottest" markets (like Athens or Johns Creek) for future physical pop-up shop locations.
