@@ -125,6 +125,10 @@ Student status information was incomplete and spread across multiple columns. To
 Although automation tools were helpful, some inconsistencies required manual inspection. Working directly in Excel allowed us to scroll through the dataset and identify obvious issues in the data and manually change errors that were missed by automation. Some cells had to be edited individually.
 This step ensured the final dataset was accurate and ready for analysis.
 
+**Step 6: Staging the Data**
+
+To successfully split the flat worksheet into the eight distinct entities required, we utilized a Staging Table Strategy. After importing the raw data into temporary tables, we were able to migrate the appropriate variables into the correct entities using normalized INSERT statements.
+
 # Queries
 
 1. Revenue Performance by Product Category
