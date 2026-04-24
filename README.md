@@ -12,6 +12,25 @@ The project begins with two raw spreadsheet exports that reflect the informal, d
 
 # Conceptual Model
 
+Our model is built to represent the real-world workflow of a retail order and inventory system for Northline Outfitters. The **Sales_Order** entity acts as the center of the system, containing key details about each transaction such as the order date, customer, employee handling the order, location, and payment method. Each order is linked to a **Customer** through a one-to-many (1:M) relationship, where one customer can place many orders, but each order belongs to one customer. This allows the business to track purchasing behavior along with attributes like loyalty status and student status.
+
+To represent what is actually being purchased, the **Order_Line** entity breaks each order into individual items. This table connects orders to specific **Products**, while also storing important transaction details like quantity, unit price, discounts, tax, and return status.  This allows the system to capture detailed sales activity at an item level. This creates a (1:M) relationship between **Sales_Order** and **Order_Line**, since one order can contain multiple line items. 
+
+The relationship from **Product** to **Order_Line** forms a (1:M) relationship, as many order lines can reference the same product. Products are organized through the **Category** and **Vendor entities**. Each product is assigned a **primary category** and may also have an **alternative category**, allowing for more flexible classification of items such as apparel, accessories, and tech products. Vendors supply the products, and each product is tied to a specific vendor, making it possible to track supplier relationships and inventory sources.
+
+On the operational side,** Employees** are responsible for processing orders, and the model includes a recursive relationship to represent management structure (employees reporting to managers). **Orders **are also tied to a Location, which stores shipping details such as city, state, and country, since Northline Outfitters’ operations run across the United States and Canada.
+
+In addition to the core system, we included features that improve tracking:
+
+Product Details: The **Product** entity includes attributes such as cost, price, size, weight, and discontinuation status. It also contains a parent SKU field, which can be used to represent relationships between related products.
+
+Transaction Details: Within the **Order_Line** entity, fields for discounts, taxes, and return flags allow the system to capture more detailed information about each sale.
+
+This structure allows Northline Outfitters to move from basic Excel-based tracking to a more structured system that can keep track of both high level order activity and detailed transaction data, supporting more efficient operations and future data analysis.
+
+<img width="405" height="449" alt="Screenshot 2026-04-24 at 8 49 03 AM" src="https://github.com/user-attachments/assets/ee50599e-5758-4ac6-8843-05def74a4b4e" />
+
+
 # Data Quality Assesment
 The source dataset reveals contains significant data quality issues that may negatively impact analysis, reporting accuracy, and overall data reliability. The primary issues are listed below:
 
