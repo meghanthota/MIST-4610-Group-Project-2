@@ -18,7 +18,7 @@ To represent what is actually being purchased, the **Order_Line** entity breaks 
 
 The relationship from **Product** to **Order_Line** forms a (1:M) relationship, as many order lines can reference the same product. Products are organized through the **Category** and **Vendor entities**. Each product is assigned a **primary category** and may also have an **alternative category**, allowing for more flexible classification of items such as apparel, accessories, and tech products. Vendors supply the products, and each product is tied to a specific vendor, making it possible to track supplier relationships and inventory sources.
 
-On the operational side,** Employees** are responsible for processing orders, and the model includes a recursive relationship to represent management structure (employees reporting to managers). **Orders **are also tied to a Location, which stores shipping details such as city, state, and country, since Northline Outfitters’ operations run across the United States and Canada.
+On the operational side,**Employees** are responsible for processing orders, and the model includes a recursive relationship to represent management structure (employees reporting to managers). **Orders**are also tied to a Location, which stores shipping details such as city, state, and country, since Northline Outfitters’ operations run across the United States and Canada.
 
 In addition to the core system, we included features that improve tracking:
 
